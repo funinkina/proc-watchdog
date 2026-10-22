@@ -4,6 +4,8 @@ A tiny macOS background check that tells you when something has been quietly coo
 
 It exists because a hung `vitest` worker sat at 100% CPU for 7 hours before anyone noticed.
 
+<img src="docs/notification.png" alt="Notification: node (PID 24156), 105.3% CPU for 410+ min · kill 24156" width="356">
+
 - **CPU hogs:** notifies once when a process stays above 80% CPU for 20 minutes.
 - **Memory hogs:** notifies once when a process uses more than 3 GB.
 - **Orphaned workers:** kills (or reports) vitest/jest workers whose parent run has exited.
